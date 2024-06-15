@@ -69,7 +69,7 @@ exports.updateCafe = async (req, res) => {
 //for super admin
 exports.getCafeByUserId = async (req, res) => {
   try {
-    const { userId } = req.data;
+    const { userId } = req.body;
     const cafe = await Cafe.findAll({
       where: {
         ownerId: userId
@@ -82,6 +82,7 @@ exports.getCafeByUserId = async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 };
+
 exports.getMyCafe = async (req, res) => {
   try {
     const cafe = await Cafe.findAll({
