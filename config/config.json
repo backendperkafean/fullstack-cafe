@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "eREmHOhLabLOCtaDVzPpaVFkEubGDSpk",
+    "database": "railway",
+    "host": "roundhouse.proxy.rlwy.net",
+    "port": "22705",
+    "dialect": "postgres",
+    "define": {
+      "freezeTableName": true
+    }
+  },
+  "test": {
+    "url": "postgresql://postgres:oievtqtYicWnltKLxoPLztWBhZEtWAyL@viaduct.proxy.rlwy.net:53166/railway",
+    "dialect": "postgres",
+    "dialectOptions": {},
+    "define": {
+      "freezeTableName": true
+    }
+  },
+  "production": {
+    "url": "postgresql://postgres:oievtqtYicWnltKLxoPLztWBhZEtWAyL@viaduct.proxy.rlwy.net:53166/railway",
+    "dialect": "postgres",
+    "dialectOptions": {},
+    "define": {
+      "freezeTableName": true
+    }
+  }
+}
